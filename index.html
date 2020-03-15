@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gacha Probability Calculator V1.1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div>
+    <h1 class="title">Gacha Probability Calculator</h1>
+    
+    <h3 class="descText">Actually, this is mostly for calculating the chances of getting 5*/UR/SSR since no one cares about getting SRs or Rs. Default values are from Mirishita.</h3>
+<!--     <h3 class="descText"></h3> -->
+    <div class="centralForm">
+      <form id="frmRate" action="/action_page.php">
+      Rate of 5*/UR/SSR(%): <input type="text" id="rate5" value="3"><br>
+      Rate of 4*/SR(%): <input type="text" id="rate4" value="12"><br>
+      Rate of 3*/R(%): <input type="text" id="rate3" value="85"><br><br>
+      How many times are you rolling?: <input type="text" id="noOfRolls" value="50"><br>
+      Minimum number of 5*/UR/SSR desired <input type="text" id="desiredSSR" value="2"><br><br>
+      Specific 5*/UR/SSR? <input type="checkbox" id="specSSRChkBox"><br>
+      Rate of Specific 5*/UR/SSR(%): <input type="text" id="specSSRRate" value="0.495" disabled><br><br>
+      </form>
+    </div>
+    <div class="buttonHolder">
+      <input type="button" id="calProb" value="Calculate probability of getting 5*/UR/SSR"><br>
+    </div>
+    <h4 class="probAnn">
+    Probability: <span id="probability">Roll?</span>
+    </h4>
+  </div>
+<!--   <div id="totalTip"> -->
+<!--   </div> -->
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
